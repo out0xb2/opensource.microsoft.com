@@ -9,7 +9,7 @@ jobs:
     - name: prepare-jekyll
       run: |
         echo Getting ready to Jekyll...
-        gem install bundler
+        sudo gem install bundler
         bundle config set deployment true
         bundle config path "$PWD/vendor/bundle"
         bundle install
